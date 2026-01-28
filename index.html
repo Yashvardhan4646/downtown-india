@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/2d8a35591c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownTown India</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- GLOBAL BACKGROUND -->
+<svg class="site-bg" viewBox="0 0 1440 1024" preserveAspectRatio="none">
+  <defs>
+    <!-- Soft Glow Gradients -->
+    <radialGradient id="bgPurple" cx="20%" cy="15%" r="40%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bgPink" cx="80%" cy="20%" r="35%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bgCyan" cx="50%" cy="80%" r="45%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle Noise -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.03"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- Glow Layers -->
+  <rect width="1440" height="1024" fill="url(#bgPurple)"/>
+  <rect width="1440" height="1024" fill="url(#bgPink)"/>
+  <rect width="1440" height="1024" fill="url(#bgCyan)"/>
+
+  <!-- Noise Overlay -->
+  <rect width="1440" height="1024" filter="url(#noise)" opacity="0.15"/>
+</svg>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Staff</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        <p>The Desi Hangout</p>
+        <h1><strong>DOWNTOWN</strong></h1>
+        <h2><strong>INDIA</strong></h2>
+        <p>A vibrant Discord community where Indian gamers, creators, and socializers unite. Experience the perfect blend of modern vibes with Indian energy.</p>
+        <div class="btns">
+            <a href="https://discord.gg/downtownindia" class="btn">Join Now</a>
+            <a href=".about-gird" class="btn">Explore</a>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <h3>10K+</h3>
+                <p>Members</p>
+            </div>
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="stat">
+                <h3>20+</h3>
+                <p>Channels</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-grid">
+        <div class="about-card">
+            <i class="fa-solid fa-users"></i>
+            <h2>About community</h2>
+            <p>
+                Join thousands of active members who share your passion for gaming, music, memes, and more. There's always someone online to chat with!
+            </p>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-calendar"></i>
+            <h2>Regular Events</h2>
+            <p>
+                Participate in regular events, tournaments, and giveaways that keep the community lively and exciting.
+            </p>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-headset"></i>
+            <h2>Supportive Staff</h2>
+            <p>
+                Our dedicated staff team ensures a safe and welcoming environment for all members.
+            </p>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-comments"></i>
+            <h2>Diverse Channels</h2>
+            <p>
+                Explore a variety of channels catering to different interests, from gaming to music to general chat.
+            </p>
+        </div>
+    </div>
+    <section class="features">
+
+  <!-- SECTION HEADER (OUTSIDE GRID) -->
+  <div class="features-header">
+    <h1>What We <strong>Offer</strong></h1>
+    <p>Explore our diverse range of activities and channels</p>
+  </div>
+
+  <!-- FEATURES GRID -->
+  <div class="features-grid">
+
+    <div class="gaming card">
+      <i class="fa-solid fa-gamepad"></i>
+      <h2>Gaming Hub</h2>
+      <p>
+        Valorant, BGMI, Minecraft, GTA, and more.
+        Find squadmates, discuss strategies, and dominate together.
+      </p>
+    </div>
+
+    <div class="music card">
+      <i class="fa-solid fa-music"></i>
+      <h2>Music Lounge</h2>
+      <p>
+        Share your favorite tracks, discover new music,
+        and vibe with fellow music lovers.
+      </p>
+    </div>
+
+    <div class="memes card">
+      <i class="fa-solid fa-face-laugh-squint"></i>
+      <h2>Meme Central</h2>
+      <p>
+        Get your daily dose of laughter with memes
+        shared by our creative community members.
+      </p>
+    </div>
+
+    <div class="event card">
+      <i class="fa-solid fa-trophy"></i>
+      <h2>Events & Tournaments</h2>
+      <p>
+        Join exciting events and tournaments
+        with prizes and bragging rights up for grabs.
+      </p>
+    </div>
+
+    <div class="Level card">
+      <i class="fa-solid fa-star"></i>
+      <h2>Leveling System</h2>
+      <p>
+        Engage with the community and earn XP
+        to level up and unlock exclusive perks and roles.
+      </p>
+    </div>
+
+    <div class="voice card">
+      <i class="fa-solid fa-microphone"></i>
+      <h2>Voice Channels</h2>
+      <p>
+        Connect with others in real-time through
+        our dedicated voice channels.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <div class="team">
+        <h1>Meet The <strong>Team</strong></h1>
+        <p>Our dedicated staff team ensures a safe and welcoming environment for all members.</p>
+        <div class="team-grid">
+            <div class="teamcard">
+                <img src="assets/avatar.svg" alt="Team Member">
+                <i class="fa-solid fa-crown"></i>
+                <h2>Admin</h2>
+                <p>Shivam</p>
+            </div>
+            <div class="teamcard">
+                <img src="assets/avatar.svg" alt="Team Member">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Mod</h2>
+                <p>Moderator</p>
+            </div>
+            <div class="teamcard">
+                <img src="assets/avatar.svg" alt="Team Member">
+                <i class="fa-solid fa-controler"></i>
+                <h2>Mod 2</h2>
+                <p>Event Manager</p>
+            </div>
+            <div class="teamcard">
+                <img src="assets/avatar.svg" alt="Team Member">
+                <i class="fa-solid fa-headset"></i>
+                <h2>Support 1</h2>
+                <p>Support Staff</p>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <h1>What our <strong>Members say</strong></h1>
+        <div class="fcard">
+            <div class="info">
+                <i class="fas fa-user"></i>
+                <p>Yashvardhan</p>
+            </div>
+            <p>"Best Discord server I've ever joined! Made so many friends here. The events are super fun and the community is so welcoming."</p>
+        </div>
+        <div class="fcard">
+            <div class="info">
+                <i class="fas fa-user"></i>
+                <p>Kajal</p>
+            </div>
+            <p>"This server never gets boring! The events, games, and casual chats keep me coming back every day. The members are friendly and there’s always someone online to talk to."</p>
+        </div>
+        <div class="fcard">
+            <div class="info">
+                <i class="fas fa-user"></i>
+                <p>Atharv</p>
+            </div>
+            <p>"Absolutely love this server! Everyone is super chill and welcoming. It's the perfect place to hang out, chat, and make new friends. Highly recommend for anyone looking for a positive community!"</p>
+        </div>
+
+    </div>
+    <section class="guidelines">
+  <h2 class="section-title">
+    Server <span>Guidelines</span>
+  </h2>
+  <p class="section-subtitle">
+    Simple rules to keep our community awesome for everyone
+  </p>
+
+  <div class="guideline-card">
+    <div class="icon purple"><i class="fas fa-users"></i></div>
+    <div class="content">
+      <h3>Be Respectful</h3>
+      <p>
+        Treat everyone with kindness. No harassment, hate speech,
+        or discrimination of any kind.
+      </p>
+    </div>
+  </div>
+
+  <div class="guideline-card">
+    <div class="icon pink"><i class="fas fa-ban"></i></div>
+    <div class="content">
+      <h3>No Spam or Self-Promotion</h3>
+      <p>
+        Keep conversations meaningful. No excessive spam, ads,
+        or unsolicited promotions.
+      </p>
+    </div>
+  </div>
+
+  <div class="guideline-card">
+    <div class="icon cyan"><i class="fas fa-folder"></i></div>
+    <div class="content">
+      <h3>Use Appropriate Channels</h3>
+      <p>
+        Post content in the correct channels.
+        Gaming in gaming channels, memes in meme channels, etc.
+      </p>
+    </div>
+  </div>
+
+  <div class="guideline-card">
+    <div class="icon violet"><i class="fas fa-shield-halved"></i></div>
+    <div class="content">
+      <h3>Listen to Moderators</h3>
+      <p>
+        Follow staff instructions. They’re here to keep the
+        server safe and enjoyable for everyone.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Downtown India Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand & Description -->
+    <div class="footer-section brand">
+      <h2><span class="logo">⚡</span> <span class="brand-name">DOWNTOWN <span class="highlight">INDIA</span></span></h2>
+      <p>The ultimate Indian Discord community for gaming, music, and hanging out with awesome people.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/events.html">Events</a></li>
+        <li><a href="/team.html">Staff Team</a></li>
+        <li><a href="/rules.html">Server Rules</a></li>
+      </ul>
+    </div>
+
+    <!-- Social / Connect -->
+    <div class="footer-section social">
+      <h3>Connect With Us</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="https://x.com/joinDTI"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Downtown India. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Footer CSS -->
+<style>
+.footer {
+  background-color: #0b0b0f;
+  color: #d0d0d0;
+  padding: 60px 20px 20px 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer a {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #7f5af0; /* pastel highlight */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 1.4rem;
+  padding: 10px;
+  background-color: #1a1a1f;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.social-icons i:hover {
+  color: #fff;
+  background-color: #7f5af0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  color: #888;
+}
+
+.highlight {
+  color: #7f5af0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+
+
+
+</body>
+<!-- Include GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<script>
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Fade in header on page load
+  gsap.from("header", {
+    duration: 1,
+    y: -50,
+    opacity: 0,
+    ease: "power2.out"
+  });
+
+  // Animate hero section
+  gsap.from(".hero, .hero h1, .hero p, .hero img", {
+    scrollTrigger: {
+      trigger: ".hero",
+      start: "top 80%",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
+
+  // Animate sections (cards, content)
+  gsap.utils.toArray("section").forEach((section) => {
+    gsap.from(section.querySelectorAll(".card, .content, img"), {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.15,
+      ease: "power2.out"
+    });
+  });
+
+  // Buttons hover effect
+  gsap.utils.toArray("button, .btn").forEach(btn => {
+    btn.addEventListener("mouseenter", () => {
+      gsap.to(btn, { scale: 1.1, duration: 0.3, ease: "power2.out" });
+    });
+    btn.addEventListener("mouseleave", () => {
+      gsap.to(btn, { scale: 1, duration: 0.3, ease: "power2.out" });
+    });
+  });
+
+  // Animate images with rotation
+  gsap.utils.toArray("img").forEach(img => {
+    gsap.from(img, {
+      scrollTrigger: {
+        trigger: img,
+        start: "top 90%",
+        toggleActions: "play none none reverse"
+      },
+      opacity: 0,
+      rotation: 5,
+      y: 30,
+      duration: 1,
+      ease: "power2.out"
+    });
+  });
+
+  // Optional: footer fade in
+  gsap.from("footer", {
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top 90%"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
+</script>
+
+</html>
