@@ -84,8 +84,8 @@ nav a:hover {
   text-align: center;
   position: relative;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.95)),
-    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070&auto=format&fit=crop");
+    linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.75)),
+    url("assets/bg.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -164,7 +164,7 @@ nav a:hover {
 .btn:first-child {
  background: linear-gradient(90deg, #efa87a, #fd746c, #ff8a00);
   color: white;
-  box-shadow: 0 0 30px rgba(139,92,246,.6);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
 }
 
 /* explore */
@@ -212,6 +212,7 @@ nav a:hover {
 /* section heading (reuse existing h1 if present above grid) */
 .about-grid::before {
   content: "Why Join Downtown";
+  font-family: "DM Sans", sans-serif;
   grid-column: 1 / -1;
   text-align: center;
   font-size: clamp(34px, 5vw, 52px);
@@ -656,10 +657,11 @@ nav a:hover {
 .guidelines > div:hover {
   transform: translateY(-6px) scale(1.01);
   border-color: rgba(168,85,247,.45);
+  transition: 0.3s;
   box-shadow:
-    0 0 0 1px #ffedc580,
-    0 8px 15px #c084fc80,
-    0 0 20px #efa87a80;
+    0 0 0 1px rgba(255, 237, 197, 0.1),
+    0 8px 15px rgba(192, 132, 252, 0.1),
+    0 0 20px rgba(239, 168, 122, 0.1);
 }
 
 /* glow stronger on hover */
@@ -1055,7 +1057,7 @@ section {
 </section>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cute+Font&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Stalinist+One&family=Titan+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cute+Font&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Stalinist+One&family=Titan+One&display=swap');
 #server-roles {
   position: relative;
   padding: 80px 20px;
@@ -1063,12 +1065,10 @@ section {
   background:#f8f8f8;
   font-family: 'Inter', sans-serif;
   color: #000000;
-background-color: #ffffff;
+background-color: #000000;
 opacity: 1;
-background-image:  linear-gradient(135deg, #efa87a 25%, transparent 25%), linear-gradient(225deg, #efa87a 25%, transparent 25%), linear-gradient(45deg, #efa87a 25%, transparent 25%), linear-gradient(315deg, #efa87a 25%, #ffffff 25%);
-background-position:  21px 0, 21px 0, 0 0, 0 0;
-background-size: 42px 42px;
-background-repeat: repeat;
+background-image: radial-gradient(#8b5cf6 2px, #000000 2px);
+background-size: 40px 40px;
 }
 
 @keyframes gradientShift {
@@ -1107,13 +1107,13 @@ background-repeat: repeat;
 }
 
 .role-card {
-  background: rgba(255,255,255);
+  background: black;
   border-radius: 20px;
   padding: 35px 25px;
   width: 240px;
   text-align: center;
   transition: all 0.5s ease;
-  box-shadow: 0 0 15px rgba(255,255,255,0.3), 0 8px 40px rgba(255,255,255,0.3);
+  box-shadow: 0 0 5px rgba(255,255,255,0.15), 0 4px 20px rgba(255,255,255,0.15);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -1135,7 +1135,7 @@ background-repeat: repeat;
 .role-card i.role-icon {
   font-size: 36px;
   margin-bottom: 15px;
-  color: #FFA431;
+  color: #FF8C00;
   transition: all 0.4s ease;
   z-index:1;
   position: relative;
@@ -1149,7 +1149,7 @@ background-repeat: repeat;
   font-family: 'cute font',sans-serif;
   font-size: 22px;
   margin-bottom: 10px;
-  color: #000000;
+  color: #FF8C00;
   z-index:1;
   position: relative;
 }
@@ -1157,7 +1157,7 @@ background-repeat: repeat;
 .role-card p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #8c8c8c;
+  color: #ffffff;
   line-height: 1.5;
   z-index:1;
   position: relative;
