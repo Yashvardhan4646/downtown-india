@@ -30,9 +30,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 
 :root {
-  --purple: #8b5cf6;
-  --pink: #ec4899;
-  --cyan: #22d3ee;
+  --purple: #7d7ca4; /* Misty Lavender */
+  --pink:   #efa87a; /* Muted Peach */
+  --cyan:   #fdeca7;
   --bg: #020617;
 }
 
@@ -108,16 +108,16 @@ nav a:hover {
   font-size: 12px;
   letter-spacing: .12em;
   margin-bottom: 28px;
-  color: #a78bfa;
+  color: #fdeca7;
   background: rgba(139,92,246,.15);
-  border: 1px solid rgba(139,92,246,.4);
+  border: 1px solid #fdeca7;
 }
 
 /* BIG TITLE */
 .hero h1 {
   font-size: clamp(64px, 9vw, 130px);
   font-weight: 900;
-  background: linear-gradient(90deg, #c084fc, #ec4899, #60a5fa);
+  background: linear-gradient(90deg, #2c3e50, #fd746c, #ff8a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
@@ -127,7 +127,7 @@ nav a:hover {
   font-size: clamp(52px, 8vw, 110px);
   font-weight: 900;
   margin-top: -12px;
-  background: linear-gradient(90deg, #ec4899, #8b5cf6);
+  background: linear-gradient(90deg, #2c3e50, #fd746c, #ff8a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -162,7 +162,7 @@ nav a:hover {
 
 /* join */
 .btn:first-child {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+ background: linear-gradient(90deg, #efa87a, #fd746c, #ff8a00);
   color: white;
   box-shadow: 0 0 30px rgba(139,92,246,.6);
 }
@@ -273,10 +273,10 @@ nav a:hover {
 }
 
 /* ICON COLORS (match screenshot) */
-.about-card:nth-child(1) i { color: #8b5cf6; } /* purple */
+.about-card:nth-child(1) i { color: #FFEDC5; } /* purple */
 .about-card:nth-child(2) i { color: #ec4899; } /* pink */
-.about-card:nth-child(3) i { color: #22d3ee; } /* cyan */
-.about-card:nth-child(4) i { color: #a78bfa; } /* violet */
+.about-card:nth-child(3) i { color: #FFD45B; } /* cyan */
+.about-card:nth-child(4) i { color: #FFA431; } /* violet */
 
 /* TITLE */
 .about-card h2 {
@@ -313,7 +313,7 @@ nav a:hover {
 
 .features h1 span,
 .features h1 strong {
-  color: #a855f7;
+  color: #efa87a;
 }
 
 .features > p {
@@ -434,7 +434,7 @@ nav a:hover {
 }
 
 .team h1 strong {
-  color: #a855f7;
+  color: #efa87a;
 }
 
 .team > p {
@@ -469,7 +469,7 @@ nav a:hover {
   height: 70px;
   border-radius: 50%;
   margin-bottom: 14px;
-  border: 2px solid rgba(168,85,247,.6);
+  border: 2px solid #FFEDC5;
 }
 
 .teamcard i {
@@ -508,7 +508,7 @@ nav a:hover {
 }
 
 .feedback h1 strong {
-  color: #22d3ee;
+  color: #efa87a;
 }
 
 .feedback > p {
@@ -657,9 +657,9 @@ nav a:hover {
   transform: translateY(-6px) scale(1.01);
   border-color: rgba(168,85,247,.45);
   box-shadow:
-    0 0 0 1px rgba(168,85,247,.15),
-    0 18px 55px rgba(0,0,0,.65),
-    0 0 40px rgba(139,92,246,.25);
+    0 0 0 1px #ffedc580,
+    0 8px 15px #c084fc80,
+    0 0 20px #efa87a80;
 }
 
 /* glow stronger on hover */
@@ -978,6 +978,13 @@ section {
     <p>UPPER MANAGEMENT</p>
 </div>
 
+<div class="teamcard">
+    <img src="assets/moon.png" alt="Bubble">
+    <i class="fa-solid fa-users-cog role-icon" style="color:#a78bfa;"></i>
+    <h2>Diplomat Moon</h2>
+    <p>UPPER MANAGEMENT</p>
+</div>
+
 <!-- Lower Management -->
 <div class="teamcard">
     <img src="assets/lev.png" alt="Lavender">
@@ -1056,11 +1063,11 @@ section {
   background:#f8f8f8;
   font-family: 'Inter', sans-serif;
   color: #000000;
-  background-color: #ffffff;
+background-color: #ffffff;
 opacity: 1;
-background-image:  linear-gradient(135deg, #f7c2ff 25%, transparent 25%), linear-gradient(225deg, #f7c2ff 25%, transparent 25%), linear-gradient(45deg, #f7c2ff 25%, transparent 25%), linear-gradient(315deg, #f7c2ff 25%, #ffffff 25%);
-background-position:  22px 0, 22px 0, 0 0, 0 0;
-background-size: 44px 44px;
+background-image:  linear-gradient(135deg, #efa87a 25%, transparent 25%), linear-gradient(225deg, #efa87a 25%, transparent 25%), linear-gradient(45deg, #efa87a 25%, transparent 25%), linear-gradient(315deg, #efa87a 25%, #ffffff 25%);
+background-position:  21px 0, 21px 0, 0 0, 0 0;
+background-size: 42px 42px;
 background-repeat: repeat;
 }
 
@@ -1128,7 +1135,7 @@ background-repeat: repeat;
 .role-card i.role-icon {
   font-size: 36px;
   margin-bottom: 15px;
-  color: #ff93ed;
+  color: #FFA431;
   transition: all 0.4s ease;
   z-index:1;
   position: relative;
